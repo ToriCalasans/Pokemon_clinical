@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+body {
+    background-color: rgb(250, 221, 226);
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.cabecalho {
+    height: 100px;
+    background-color: rgb(235, 3, 3);
+}
+
+#img-logo {
+    width: 70px;
+    height: 70px;
+}
+
+#Nome-logo {
+    color: white;
+    font-size: 20pt;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.body-container {
+    min-height: 80vh;
+}
+
+footer {
+    height: 50px;
+    background-color: rgb(134, 134, 134);
+    color: white;
+    font-size: 14pt;
+    text-align: center;
+}
+
+
+/*.texto {
+    background-color: rgb(230, 31, 64);
+}*/
