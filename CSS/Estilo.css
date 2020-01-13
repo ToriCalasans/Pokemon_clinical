@@ -11,12 +11,38 @@ body {
 
 .cabecalho {
     height: 100px;
-    background-color: rgb(235, 3, 3);
+    background-color: rgb(255, 0, 0);
+}
+
+.menu {
+    height: 53px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.botao {
+    width: 250px;
+    padding: 18px 20px;
+    border: 1px solid white;
+    border-radius: 6px;
+    background-color: #FCC302;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 #img-logo {
     width: 70px;
     height: 70px;
+}
+
+#Nome_botao {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 #Nome-logo {
@@ -37,7 +63,64 @@ footer {
     text-align: center;
 }
 
+.slider {
+    display: block;
+    background-color: #000;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
 
-/*.texto {
-    background-color: rgb(230, 31, 64);
-}*/
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    align-self: auto;
+    /*background-color: #000;*/
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 5px;
+    top: 170px;
+}
+
+.slider li:nth-child(2) label {
+    left: 23px;
+    top: 170px;
+}
+
+.slider li:nth-child(3) label {
+    left: 40px;
+    top: 170px;
+}
+
+.slider li input:checked~img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
