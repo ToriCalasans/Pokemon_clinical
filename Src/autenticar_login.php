@@ -22,5 +22,5 @@ if (mysqli_num_rows($result) == 1) {
     mysqli_close($con);
     header('location: http://localhost/Pokemon_clinical/index.php?pagina=Home');
 } else {
-    header('location: http://localhost/Pokemon_clinical/index.php?pagina=login&erro=Login ou senha invalidos');
+    header('location: http://localhost/Pokemon_clinical/index.php?pagina=Login&erro=Login ou senha invalidos');
 }
