@@ -1,22 +1,27 @@
-<?php 
+<?php
 session_start();
 include_once 'Header.php'; ?>
 
 <div class="body-container">
 
-<?php
+    <?php
 
-    $pagina = isset($_GET['pagina']) ? $_GET['pagina'] : 'home';
+    $pagina = isset($_GET['pagina']) ? $_GET['pagina'] : 'Home';
 
     switch ($pagina) {
-        case 'login':
+        case 'Login':
             include_once 'view/Login.php';
             break;
-        case 'home':
-            include_once 'view/Home.php';
+        case 'Home':
+           include_once 'view/Home.php';
+          /* include_once 'view/teste.php';*/
+            break;
+        case 'CadastroAtendente':
+            include_once 'view/CadastroAtendente.php';
             break;
         default:
-            include_once 'view/Home.php';
+           include_once 'view/Home.php';
+           /* include_once 'view/teste.php';*/
     }
     ?>
 
