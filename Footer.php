@@ -9,6 +9,11 @@
             $('#Tabela_Pacientes').DataTable();
         });
     </script>
+    <script>
+        $(document).ready(function() {
+            $('#Tabela_Medicos').DataTable();
+        });
+    </script>
 
 
 </footer>
