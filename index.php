@@ -16,15 +16,29 @@ include_once 'Header.php'; ?>
             include_once 'View/Home.php';
             /* include_once 'view/teste.php';*/
             break;
-        case 'Pacientes':
+
+
+        case 'Paciente':
             include_once 'View/Paciente.php';
             break;
-        case 'CadastroAtendente':
-            include_once 'View/Atendente.php';
+        case 'Medico':
+            include_once 'View/Medico.php';
+            break;
+
+        case 'Consulta':
+            include_once 'View/Consulta.php';
+            break;
+        case 'Salvar_Consulta':
+            include_once 'View/Salvar_Consulta.php';
+            break;
+
+        case 'Salvar_Medico':
+            include_once 'View/Salvar_Medico.php';
             break;
         case 'SalvarPaciente':
             include_once 'View/SalvarPaciente.php';
             break;
+
         default:
             include_once 'View/Home.php';
             /* include_once 'view/teste.php';*/
