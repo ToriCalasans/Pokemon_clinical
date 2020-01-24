@@ -9,64 +9,46 @@ if (isset($_SESSION['usuario_fez_login'])) {
 <hr>
 <div class="grade">
     <img id="img-home" src="img/pokeball.png" alt="Umbrella">
-    <!--
-    <ul class="slider">
-        <li>
-            <input type="radio" id="slide1" name="slide" checked>
-            <label for="slide1"></label>
-            <img id="img-slide" src="Img/Carvalho.png" alt="Professor Carvalho" />
-        </li>
-       
-        <li>
-            <input type="radio" id="slide2" name="slide" checked>
-            <label for="slide2"></label>
-            <img id="img-slide" src="Img/Professor_Elm.png" alt="Professor Elm" />
-        </li>
-   
-        <li>
-            <input type="radio" id="slide3" name="slide" checked>
-            <label for="slide3"></label>
-            <img id="img-slide" src="Img/Professor_Birch.png" alt="Professor Birch" />
-        </li>
 
-        <li>
-            <input type="radio" id="slide4" name="slide" checked>
-            <label for="slide4"></label>
-            <img id="img-slide" src="Img/Professor_Rowan.png" alt="Professor Birch" />
-        </li>
 
-        <li>
-            <input type="radio" id="slide5" name="slide" checked>
-            <label for="slide5"></label>
-            <img id="img-slide" src="Img/Professora_Juniper.png" alt="Professor Birch" />
-        </li>
-
-        <li>
-            <input type="radio" id="slide6" name="slide" checked>
-            <label for="slide6"></label>
-            <img id="img-slide" src="Img/Professor_Sycamore.png" alt="Professor Birch" />
-        </li>
-
-        <li>
-            <input type="radio" id="slide7" name="slide" checked>
-            <label for="slide7"></label>
-            <img id="img-slide" src="Img/Professor_Kukui.png" alt="Professor Birch" />
-        </li>
-
-        <li>
-            <input type="radio" id="slide8" name="slide" checked>
-            <label for="slide8"></label>
-            <img id="img-slide" src="Img/Professor_Magnolia.png" alt="Professor Birch" />
-        </li>
-
-        <li>
-            <input type="radio" id="slide9" name="slide" checked>
-            <label for="slide9"></label>
-            <img id="img-slide" src="Img/Professora_Sonia.png" alt="Professor Birch" />
-        </li>
-    </ul>
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Img/Carvalho.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Professor Carvalho</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Img/Professor_Elm.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Img/Professor_Birch.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
--->
 
 <script>
     let deg = 0;
