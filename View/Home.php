@@ -67,6 +67,7 @@ if (isset($_SESSION['usuario_fez_login'])) {
     </ul>
 </div>
 -->
+
 <script>
     let deg = 0;
     let img_home = document.getElementById("img-home")
