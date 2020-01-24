@@ -1,21 +1,26 @@
+<?php require 'Src/Paciente/Pesquisar_ID.php'; ?>
 <div class="container">
     <h2>Salvar paciente</h2>
 
 
     <form action="Src/Paciente/Salvar.php" method="POST">
+        <?php if(isset($_GET['ID'])){?>
+        <input type="hidden" name="ID" value= "<?= $_GET['ID'] ?> ">
+        <?php } ?>
+
         <div class="form-group">
             <label for="input_login">Nome</label>
-            <input type="text" class="form-control"  required type="text" name="Nome" id="Input_Nome">
+            <input value="<?= $Paciente['Nome'] ?>" type="text" class="form-control"  required type="text" name="Nome" id="Input_Nome">
         </div>
 
         <div class="form-group">
             <label for="input_login">Data de nascimento</label>
-            <input class="form-control" type="date" required type="text" name="Nascimento" id="Input_Nascimento">
+            <input value="<?= $Paciente['Nascimento'] ?>" class="form-control" type="date" required type="text" name="Nascimento" id="Input_Nascimento">
         </div>
 
         <div class="form-group">
             <label for="input_login">CPF</label>
-            <input type="text" class="form-control"  required type="text" name="CPF" id="Input_CPF">
+            <input value="<?= $Paciente['CPF'] ?>" type="text" class="form-control"  required type="text" name="CPF" id="Input_CPF">
         </div>
 
         <?php if (isset($_GET['erro'])) { ?>
