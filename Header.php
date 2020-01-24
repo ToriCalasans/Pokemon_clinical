@@ -24,10 +24,10 @@
             <div>
 
                 <?php if (isset($_SESSION['usuario_fez_login'])) { ?>
-                    <a href="?pagina=Pacientes"><button id="Nome_botao" class="botao">Pacientes</button></a>
-                    <a href="?pagina=Medicos"><button id="Nome_botao" class="botao">Médicos</button></a>
-                    <a href="?pagina=AtendenteS"><button id="Nome_botao" class="botao">Atendentes</button></a>
-                    <a href="?pagina=Consultas"><button id="Nome_botao" class="botao">Consultas</button></a>
+                    <a href="?pagina=Paciente"><button id="Nome_botao" class="botao">Pacientes</button></a>
+                    <a href="?pagina=Medico"><button id="Nome_botao" class="botao">Médicos</button></a>
+                    <a href="?pagina=Atendente"><button id="Nome_botao" class="botao">Atendentes</button></a>
+                    <a href="?pagina=Consulta"><button id="Nome_botao" class="botao">Consultas</button></a>
                     <a href="sair.php"><button id="Nome_botao" class="botao">Sair</button></a>
 
                 <?php } else { ?>
