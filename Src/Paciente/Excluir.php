@@ -1,7 +1,7 @@
 <?php
 
 //conexão com o banco
-require 'Src/conexao_banco.php';
+require '../conexao_banco.php';
 
 //pagar id
 $PacienteID = isset($_GET['ID']) ? $_GET['ID'] : 0;
