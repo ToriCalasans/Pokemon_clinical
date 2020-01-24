@@ -3,7 +3,12 @@
 </br>
 </br>
 </br>
-<table class="table table-bordered table-hover table-striped " style = "width : 100%; " id="    ">
+<table class="table table-bordered table-hover table-striped " style="width : 100%; " id="Tabela_Pacientes">
+    <caption>
+    <a class="btn btn-success" href="?pagina=SalvarPaciente">Cadastrar</a>
+
+
+   </caption>
     <!-- 
     linha  = table roll = tr
     titulo = table head = th
@@ -18,7 +23,6 @@
         </tr>
     </thead>
     <tbody>
-
 
 
         <?php while ($Linha = mysqli_fetch_assoc($Tabela_Pacientes)) { ?>
